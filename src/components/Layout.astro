@@ -1,0 +1,28 @@
+---
+import Navbar from "./Navbar.astro";
+import LeftSidebar from "./LeftSidebar.astro";
+import RightSidebar from "./RightSidebar.astro";
+import Footer from "./Footer.astro";
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>MyProfitLand Guide</title>
+  </head>
+
+  <body>
+    <div class="canvas">
+      <Navbar />
+      <div class="main">
+        <LeftSidebar />
+        <div class="content">
+          <slot />
+        </div>
+        <RightSidebar />
+      </div>
+      <Footer />
+    </div>
+  </body>
+</html>
